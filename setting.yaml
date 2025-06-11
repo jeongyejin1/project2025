@@ -128,4 +128,3 @@ dependencies:
       - tqdm==4.67.1
       - transformers==4.44.2
       - tzdata==2025.2
-prefix: C:\Users\Suho\miniconda3\envs\torch251_gpu
