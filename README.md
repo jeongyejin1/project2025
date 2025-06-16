@@ -111,6 +111,11 @@ UCI ML drug Review dataset은 UCI 머신 러닝 저장소에 게시되어 있는
 - Batch Size: 8
 - Scheduler: Linear warmup
 
+### 4.3 시각화 자료
+
+---
+![img.png](img.png)
+![img_2.png](img_2.png)
 ---
 
 ### 5.테스트 데이터 평가
