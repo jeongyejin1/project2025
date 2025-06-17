@@ -8,7 +8,7 @@
 
 
 ## 1. 개요
-UCI ML drug Review dataset은 UCI 머신 러닝 저장소에 게시되어 있는 약물 검토 데이터셋이다.이 데이터세트는 특정 약물에 대한 환자 리뷰와 관련 질환에 대한 리뷰를 제공합니다. 리뷰와 평점은 효능, 부작용, 그리고 전반적인 의견의 세 가지 측면에 대한 보고서로 분류됩니다.
+UCI ML drug Review dataset은 UCI 머신 러닝 저장소에 게시되어 있는 약물 검토 데이터셋이다.이 데이터세트는 특정 약물에 대한 환자 리뷰와 관련 질환에 대한 리뷰를 제공한다. 리뷰와 평점은 효능, 부작용, 그리고 전반적인 의견의 세 가지 측면에 대한 보고서로 분류된다.
 
 ### 1.1 문제 정의
   
@@ -51,7 +51,7 @@ UCI ML drug Review dataset은 UCI 머신 러닝 저장소에 게시되어 있는
 
 
 ### 2.3 데이터 가공
-* drugsComTest_raw에서 rating(평점)을 기준으로 1,2,3은 0(부정), 8,9,10은 1(긍정)으로 나누어 label행을 추가하였다.
+* drugsComTest_raw에서 rating(평점)을 기준으로 1,2,3은 0(부정), 8,9,10은 1(긍정)으로 나누어 label행을 추가했다.
 * 임의의 데이터 4400개는 전체 행 중 10%만 무작위로 선택하여 데이터를 나누었다.
 
 ## 3 Mobilebert를 사용한 결과(MobileBERT-Finetune-GPU.py)
@@ -70,7 +70,7 @@ UCI ML drug Review dataset은 UCI 머신 러닝 저장소에 게시되어 있는
 ### 3.2 전처리 및 데이터셋 구성
 - 리뷰 텍스트에 대해 `MobileBERT tokenizer`를 사용하여 **토큰화**하고, 최대 길이를 `256`으로 제한.
 - `attention_mask`를 생성하여 패딩 토큰이 무시되도록 처리.
-- 데이터셋은 `TensorDataset`으로 변환하여 `DataLoader`에 전달함.
+- 데이터셋은 `TensorDataset`으로 변환하여 `DataLoader`에 전달한다.
 - `batch_size = 8`
 
 
@@ -152,7 +152,7 @@ test_accuracy = np.sum(np.array(test_pred) == np.array(test_true)) / len(test_pr
 | 총 테스트 샘플 수   | 39,765건  |
 | 모델 정확도        | 약 97%    |
 
-🔍 전체 데이터 39,765건에 대해 약 97%의 정확도를 달성하며, 학습 모델의 일반화 성능이 우수함을 확인하였습니다.
+🔍 전체 데이터 39,765건에 대해 약 97%의 정확도를 달성하며, 학습 모델의 일반화 성능이 우수함을 확인했다.
 
 
 
