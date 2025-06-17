@@ -51,7 +51,7 @@ UCI ML drug Review dataset은 UCI 머신 러닝 저장소에 게시되어 있는
 
 
 ### 2.3 데이터 가공
-* drugsComTest_raw에서 rating(평점)을 기준으로 1~3은 0(부정), 8~10은 1(긍정)으로 나누어 label행을 추가하였다.
+* drugsComTest_raw에서 rating(평점)을 기준으로 1,2,3은 0(부정), 8,9,10은 1(긍정)으로 나누어 label행을 추가하였다.
 * 임의의 데이터 4400개는 전체 행 중 10%만 무작위로 선택하여 데이터를 나누었다.
 
 ## 3 Mobilebert를 사용한 결과(MobileBERT-Finetune-GPU.py)
