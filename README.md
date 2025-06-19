@@ -1,4 +1,4 @@
-## MobileMert를 활용한 약물 리뷰 분석 프로젝트
+## MobileBert를 활용한 약물 리뷰 분석 프로젝트
 
 ---
 ![img_1.png](img_1.png)
